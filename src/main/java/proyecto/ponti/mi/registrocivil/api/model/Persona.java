@@ -20,11 +20,5 @@ public class Persona {
     private Date fnacimiento;
     private String nacionalidad;
     private String direccion;
-    @ManyToOne
-    @JoinColumn(name = "iddistrito",referencedColumnName = "iddistrito")
-    private Distrito iddistrito;
 
-    @ManyToOne
-    @JoinColumn(name = "idtipopersona",referencedColumnName = "idtipopersona")
-    private Tipopersona idtipopersona;
 }

@@ -17,7 +17,5 @@ public class Provincia {
     private Float longitud;
     private Float latitud;
 
-    @ManyToOne
-    @JoinColumn(name = "iddepartamento",referencedColumnName = "iddepartamento")
-    private Departamento iddepartamento;
+
 }

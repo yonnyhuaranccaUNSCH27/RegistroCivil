@@ -13,17 +13,17 @@ public class Defuncion {
     @Column(name="iddefuncion")
     private Integer id;
     @ManyToOne
-    @JoinColumn(name = "idacta",referencedColumnName = "idacta")
+    @JoinColumn(name = "idacta")
     private Acta idacta;
     @ManyToOne
-    @JoinColumn(name = "idpersona_fallecido",referencedColumnName = "idpersona_fallecido")
-    private Persona idpersona_fallecido;
+    @JoinColumn(name = "idpersona_fallecido")
+    private Persona idpersonafallecido;
     private Date fdefuncion;
     @ManyToOne
-    @JoinColumn(name = "idpersona_alcalde",referencedColumnName = "idpersona_alcalde")
-    private Persona idpersona_alcalde;
+    @JoinColumn(name = "idpersona_alcalde")
+    private Persona idpersonaalcalde;
     @ManyToOne
-    @JoinColumn(name = "idusuario",referencedColumnName = "idusuario")
+    @JoinColumn(name = "idusuario")
     private Usuario idusuario;
     private String documento;
     private Integer estado;

@@ -13,28 +13,28 @@ public class Nacimientos {
     @Column(name="idnacimientos")
     private Integer id;
     @ManyToOne
-    @JoinColumn(name = "idacta",referencedColumnName = "idacta")
+    @JoinColumn(name = "idacta")
     private Acta idacta;
     @ManyToOne
-    @JoinColumn(name = "idpersona_nacimiento",referencedColumnName = "idpersona_nacimiento")
+    @JoinColumn(name = "idpersona_nacimiento")
     private Persona idpersona_nacimiento;
     @ManyToOne
-    @JoinColumn(name = "idpersona_padre",referencedColumnName = "idpersona_padre")
+    @JoinColumn(name = "idpersona_padre")
     private Persona idpersona_padre;
     @ManyToOne
-    @JoinColumn(name = "idpersona_madre",referencedColumnName = "idpersona_madre")
+    @JoinColumn(name = "idpersona_madre")
     private Persona idpersona_madre;
     @ManyToOne
-    @JoinColumn(name = "iddeclarante",referencedColumnName = "iddeclarante")
+    @JoinColumn(name = "iddeclarante")
     private Persona iddeclarante;
     @ManyToOne
-    @JoinColumn(name = "idpersona_declarante_otros",referencedColumnName = "idpersona_declarante_otros")
+    @JoinColumn(name = "idpersona_declarante_otros")
     private Persona idpersona_declarante_otros;
     @ManyToOne
-    @JoinColumn(name = "idpersona_alcalde",referencedColumnName = "idpersona_alcalde")
+    @JoinColumn(name = "idpersona_alcalde")
     private Persona idpersona_alcalde;
     @ManyToOne
-    @JoinColumn(name = "idusuario",referencedColumnName = "idusuario")
+    @JoinColumn(name = "idusuario")
     private Usuario idusuario;
     private LocalDateTime fregistro;
     private String documento;

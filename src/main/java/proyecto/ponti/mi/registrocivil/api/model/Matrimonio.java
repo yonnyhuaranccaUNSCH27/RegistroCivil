@@ -14,30 +14,30 @@ public class Matrimonio {
     @Column(name="idmatrimonio")
     private Integer id;
     @ManyToOne
-    @JoinColumn(name = "idacta",referencedColumnName = "idacta")
+    @JoinColumn(name = "idacta")
     private Acta idacta;
     @ManyToOne
-    @JoinColumn(name = "idpersona_novio",referencedColumnName = "idpersona_novio")
-    private Persona idpersona_novio;
+    @JoinColumn(name = "idpersona_novio")
+    private Persona idpersonanovio;
     @ManyToOne
-    @JoinColumn(name = "idpersona_novia",referencedColumnName = "idpersona_novia")
-    private Persona idpersona_novia;
+    @JoinColumn(name = "idpersona_novia")
+    private Persona idpersonanovia;
     private Date fmatrimonio;
     private LocalDateTime fregistro;
     @ManyToOne
-    @JoinColumn(name = "idpersona_testigo1",referencedColumnName = "idpersona_testigo1")
-    private Persona idpersona_testigo1;
+    @JoinColumn(name = "idpersona_testigo1")
+    private Persona idpersonatestigo1;
     @ManyToOne
-    @JoinColumn(name = "idpersona_testigo2",referencedColumnName = "idpersona_testigo2")
-    private Persona idpersona_testigo2;
+    @JoinColumn(name = "idpersona_testigo2")
+    private Persona idpersonatestigo2;
     @ManyToOne
-    @JoinColumn(name = "idpersona_testigo3",referencedColumnName = "idpersona_testigo3")
-    private Persona idpersona_testigo3;
+    @JoinColumn(name = "idpersona_testigo3")
+    private Persona idpersonatestigo3;
     @ManyToOne
-    @JoinColumn(name = "idpersona_alcalde",referencedColumnName = "idpersona_alcalde")
-    private Persona idpersona_alcalde;
+    @JoinColumn(name = "idpersona_alcalde")
+    private Persona idpersonaalcalde;
     @ManyToOne
-    @JoinColumn(name = "idusuario",referencedColumnName = "idusuario")
+    @JoinColumn(name = "idusuario")
     private Usuario idusuario;
     private String documento;
     private Integer estado;

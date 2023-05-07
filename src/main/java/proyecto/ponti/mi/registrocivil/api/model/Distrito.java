@@ -16,6 +16,6 @@ public class Distrito {
     private Float latitud;
 
     @ManyToOne
-    @JoinColumn(name = "idprovincia",referencedColumnName = "idprovincia")
+    @JoinColumn(name = "idprovincia")
     private Provincia idprovincia;
 }
